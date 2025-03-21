@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+ 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>ELE-X</title> 
+    <style> 
+        * 
+        { 
+            padding: 0; 
+            margin: 0; 
+        } 
+      
+        body 
+        { 
+            background-image: url("1.jpg"); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            opacity: 1; 
+        } 
+        .main 
+        { 
+            letter-spacing: 2px; 
+            font-size: 20px
+        } 
+        .link 
+        { 
+            display: flex; 
+            gap: 30px; 
+            color: white; 
+            margin-left: 220px; 
+            margin-top: 40px; 
+            cursor: pointer ; 
+        } 
+        .link>a:link 
+        { 
+            color: white; 
+            text-decoration: none; 
+            cursor: pointer; 
+        } 
+        .link>a:hover 
+        {  
+            font-weight: 900; 
+            font-size: 20px; 
+            color: white;
+            border: 2px solid white; 
+            padding: 6px; 
+        } 
+        .login>button>a:link 
+        { 
+            color: rgb(255, 255, 255); 
+            background-color: black;
+            font-size: 20px; 
+            font-weight: 545; 
+            padding: 5px; 
+            text-decoration: none; 
+            cursor: pointer; 
+        } 
+        .login>button>a:hover
+        {
+            color: white;
+            background-color: black;
+            font-weight: 900; 
+            font-size: 20px; 
+            border: 2px solid white; 
+            padding: 6px; 
+        }
+
+        a:visited
+        {
+            color: white;
+        }
+        a:active
+        {
+            color: white;
+        }
+        a:link
+        {
+            color: white;
+        }
+        /* Responsive design */
+        @media (max-width: 768px)
+         {
+            .link 
+            {
+                flex-direction: column; /* Stack items on smaller screens */
+                gap: 15px;
+                text-align: center;
+            }
+            .login
+            {
+                margin-top: 15px;
+                text-align: center;
+            }
+         }
+         
+    </style> 
+</head> 
+<body> 
+ 
+        <div class="main"> 
+ 
+            <div class="link"> 
+                <a >HOME</a> 
+                <a >SHOP NOW</a> 
+                <a >CATEGORIES</a> 
+                <a> MEGA DEALS</a> 
+                <a >CART</a> 
+                <a >WISHLIST</a> 
+                <a>ABOUT US</a> 
+                <a >CONTACT</a>   
+ 
+                <div class="login"> 
+                    <button><a href="LOGIN.HTML">LOGIN</a></button> 
+                </div> 
+            </div> 
+             
+             
+ 
+        </div> 
+     
+</body> 
+</html>
