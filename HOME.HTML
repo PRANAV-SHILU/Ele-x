@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ele-x | Home</title>
-
     <style>
         /* General Styles */
         body {
@@ -15,154 +11,102 @@
             background-color: #111;
             color: white;
             text-align: center;
-        }
+        }h2 {
+        color: #ff6600;
+    }
+    
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ff6600;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        background-color: #cc5200;
+    }
+    
+    /* Header */
+    header {
+        background: black;
+        padding: 15px;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    
+    nav a:hover {
+        color: #ff6600;
+    }
+    
+    /* Hero Banner */
+    .hero-banner {
+        width: 100%;
+        height: 350px;
+        background: url('banner1.jpg') no-repeat center center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 2.5em;
+    }
+    
+    /* Best Selling Products */
+    .product-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    
+    .product {
+        width: 30%;
+        padding: 20px;
+        background: #222;
+        border-radius: 5px;
+        margin: 10px;
+    }
+    
+    /* Newsletter */
+    .newsletter input {
+        padding: 10px;
+        width: 250px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    .newsletter button {
+        padding: 10px 20px;
+    }
+    
+    /* Footer */
+    footer {
+        background: black;
+        padding: 10px;
+        margin-top: 20px;
+    }
+</style>
 
-        h2 {
-            color: #ff6600;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #ff6600;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn:hover {
-            background-color: #cc5200;
-        }
-
-        /* Header */
-        header {
-            background: black;
-            padding: 15px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline-block;
-            margin: 0 15px;
-            position: relative;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        nav a:hover {
-            color: #ff6600;
-        }
-
-        /* Dropdown */
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            background: #222;
-            padding: 10px;
-            border-radius: 5px;
-            top: 30px;
-            left: 0;
-            min-width: 150px;
-            text-align: left;
-        }
-
-        .dropdown-menu li {
-            display: block;
-            padding: 5px 10px;
-        }
-
-        .dropdown-menu li a {
-            color: white;
-            display: block;
-        }
-
-        .dropdown:hover .dropdown-menu {
-            display: block;
-        }
-
-        /* Hero Banner (Slideshow) */
-        .hero-banner {
-            width: 100%;
-            height: 350px;
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 2.5em;
-            position: relative;
-            transition: background 1s ease-in-out;
-        }
-
-        .slide-buttons {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .slide-btn {
-            width: 15px;
-            height: 15px;
-            background: white;
-            display: inline-block;
-            border-radius: 50%;
-            margin: 0 5px;
-            cursor: pointer;
-        }
-
-        /* Best Selling Products */
-        .product-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
-        }
-
-        .product {
-            width: 30%;
-            padding: 20px;
-            background: #222;
-            border-radius: 5px;
-            margin: 10px;
-        }
-
-        /* Newsletter */
-        .newsletter input {
-            padding: 10px;
-            width: 250px;
-            margin: 10px;
-            border: none;
-            border-radius: 5px;
-        }
-
-        .newsletter button {
-            padding: 10px 20px;
-        }
-
-        /* Footer */
-        footer {
-            background: black;
-            padding: 10px;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-
-<body>
-
+</head><body>
     <!-- Header -->
     <header>
         <h1>Ele-x</h1>
@@ -170,14 +114,6 @@
             <ul>
                 <li><a href="HOME.HTML">Home</a></li>
                 <li><a href="#">Shop Now</a></li>
-                <!-- <li class="dropdown">
-                    <a href="#">Categories</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Electronics</a></li>
-                        <li><a href="#">Fashion</a></li>
-                        <li><a href="#">Home Appliances</a></li>
-                    </ul>
-                </li> -->
                 <li><a href="#">Mega Deals</a></li>
                 <li><a href="VOUCHER.HTML">Vouchers</a></li>
                 <li><a href="BLOGFAQ.HTML">Blogs & FAQs</a></li>
@@ -186,89 +122,48 @@
                 <li><a href="LOGIN.HTML">Login</a></li>
             </ul>
         </nav>
-    </header>
+    </header><!-- Hero Banner -->
+<section class="hero-banner">
+    <h2>Best Deals, Best Prices!</h2>
+</section>
 
-    <!-- Hero Banner -->
-    <section class="hero-banner" id="hero-banner">
-        <h2>Best Deals, Best Prices!</h2>
-        <div class="slide-buttons">
-            <span class="slide-btn" onclick="changeBanner(0)"></span>
-            <span class="slide-btn" onclick="changeBanner(1)"></span>
-            <span class="slide-btn" onclick="changeBanner(2)"></span>
+<!-- Best Selling Products -->
+<section class="bestsellers">
+    <h2>Best Selling Products</h2>
+    <div class="product-grid">
+        <div class="product">
+            <h3>Smartphone</h3>
+            <p>Price: $499</p>
         </div>
-    </section>
-
-    <!-- Best Selling Products -->
-    <section class="bestsellers">
-        <h2>Best Selling Products</h2>
-        <div class="product-grid" id="product-grid">
-            <!-- JavaScript adds products dynamically -->
+        <div class="product">
+            <h3>Laptop</h3>
+            <p>Price: $999</p>
         </div>
-    </section>
+        <div class="product">
+            <h3>Headphones</h3>
+            <p>Price: $199</p>
+        </div>
+        <div class="product">
+            <h3>Smartwatch</h3>
+            <p>Price: $249</p>
+        </div>
+        <div class="product">
+            <h3>Bluetooth Speaker</h3>
+            <p>Price: $149</p>
+        </div>
+    </div>
+</section>
 
-    <!-- Newsletter -->
-    <section class="newsletter">
-        <h2>Subscribe for the Latest Deals</h2>
-        <input type="email" id="email" placeholder="Enter your email">
-        <button class="btn" onclick="subscribe()">Subscribe</button>
-    </section>
+<!-- Newsletter -->
+<section class="newsletter">
+    <h2>Subscribe for the Latest Deals</h2>
+    <input type="email" placeholder="Enter your email">
+    <button class="btn">Subscribe</button>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Ele-x. All rights reserved.</p>
-    </footer>
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Ele-x. All rights reserved.</p>
+</footer>
 
-    <script>
-        // Hero Banner Slideshow
-        var images = ['banner1.jpg', 'banner2.jpg', 'banner3.jpg'];
-        var index = 0;
-
-        function changeBanner(slideIndex) {
-            index = slideIndex;
-            var banner = document.getElementById("hero-banner");
-            banner.style.background = "url('" + images[index] + "') no-repeat center center/cover";
-        }
-
-        setInterval(function () {
-            index = (index + 1) % images.length;
-            changeBanner(index);
-        }, 4000); // Auto change every 4 sec
-
-        // Best Selling Products (Database Simulation)
-        var products =
-            [
-                { name: "Smartphone", price: "$499" },
-                { name: "Laptop", price: "$999" },
-                { name: "Headphones", price: "$199" },
-                { name: "Smartwatch", price: "$249" },
-                { name: "Bluetooth Speaker", price: "$149" }
-            ];
-
-        function displayProducts() {
-            var productGrid = document.getElementById("product-grid");
-            productGrid.innerHTML = "";
-
-            products.forEach(function (product) {
-                var div = document.createElement("div");
-                div.className = "product";
-                div.innerHTML = "<h3>" + product.name + "</h3><p>Price: " + product.price + "</p>";
-                productGrid.appendChild(div);
-            });
-        }
-        displayProducts();
-
-        // Newsletter Subscription
-        function subscribe() {
-            var email = document.getElementById("email").value;
-            if (email === "") {
-                alert("Please enter a valid email.");
-            }
-            else {
-                alert("Subscribed successfully!");
-            }
-        }
-    </script>
-
-</body>
-
-</html>
+</body></html>
