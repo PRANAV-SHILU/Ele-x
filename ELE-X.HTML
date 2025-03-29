@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELE-X</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 1;
+            font-family: Arial, sans-serif;
+        }
+
+        .main {
+            letter-spacing: 2px;
+            font-size: 16px;
+        }
+
+        .link {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 13px;
+            color: white;
+            margin-left: 185px;
+            margin-top: 40px;
+            cursor: pointer;
+        }
+
+        .link a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 5px 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .link a:hover {
+            font-weight: 900;
+            font-size: 21px;
+            color: orange;
+            border: 2px solid black;
+            padding: 6px;
+        }
+
+        /* Login Button */
+        .login a {
+            display: inline-block;
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 8px 15px;
+            border: 2px solid white;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .login a:hover {
+            background-color: white;
+            color: black;
+            font-weight: 900;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .link {
+                justify-content: center;
+                gap: 10px;
+            }
+
+            .login {
+                margin-top: 15px;
+                text-align: center;
+            }
+        }
+
+        /* Fade-in animation for menu items */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .link a {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        /* Glowing Login Button Effect */
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 5px white;
+            }
+
+            50% {
+                box-shadow: 0 0 15px white;
+            }
+
+            100% {
+                box-shadow: 0 0 5px white;
+            }
+        }
+
+        .login a:hover {
+            animation: pulse 1s infinite;
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 150px;
+            box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgb(60, 58, 58);
+            font-size: 20PX;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="link">
+            <a href="#">HOME</a>
+            <a href="#">SHOP NOW</a>
+
+            <!-- Dropdown for Categories -->
+            <!-- <div class="dropdown">
+                <a href="#">CATEGORIES</a>
+                <div class="dropdown-content">
+                    <a href="#">Electronics</a>
+                    <a href="#">Fashion</a>
+                    <a href="#">Home Appliances</a>
+                </div>
+            </div> -->
+
+            <a href="#">MEGA DEALS</a>
+            <a href="VOUCHER.HTML">VOUCHERS</a>
+            <a href="BLOGFAQ.HTML">BLOGS & FAQs</a>
+            <a href="ABOUTUS.HTML">ABOUT US</a>
+            <a href="CONTACT.HTML">CONTACT</a>
+
+            <div class="login">
+                <a href="LOGIN.HTML">LOGIN</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
