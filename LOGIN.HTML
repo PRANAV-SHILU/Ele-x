@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+
+    <style>
+        body {
+            background-color: orange;
+            font-family: arial, sans-serif;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Header */
+        .fix {
+            background: black;
+            padding: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .fix h1 {
+            padding-bottom: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 18px;
+            position: relative;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        }
+
+        .login {
+            background: linear-gradient(to bottom, #222, #000);
+            color: orange;
+            padding: 20px;
+            width: 300px;
+            height: 330px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 10px 30px 55px rgba(0, 0, 0, 50);
+            margin-top: 50px;
+        }
+
+        .remember {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+
+        input {
+            padding: 8PX;
+            border-radius: 4px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            outline: none;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        label {
+            text-align: left;
+            font-size: 14px;
+        }
+
+        button {
+            background: orange;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background: #e6b800;
+        }
+
+        a {
+            color: orange;
+
+        }
+
+        a:hover {
+            color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="fix">
+        <h1>Ele-x</h1>
+        <nav>
+            <ul>
+                <li><a href="HOME.HTML">Home</a></li>
+                <li><a href="#">Shop Now</a></li>
+                <li><a href="MEGADEALS.HTML">Mega Deals</a></li>
+                <li><a href="VOUCHER.HTML">Vouchers</a></li>
+                <li><a href="BLOGFAQ.HTML">Blogs & FAQs</a></li>
+                <li><a href="ABOUTUS.HTML">About Us</a></li>
+                <li><a href="CONTACT.HTML">Contact</a></li>
+                <li><a href="LOGIN.HTML">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="login">
+        <h1>Login</h1>
+
+        <form method="post" action="HOME.HTML" onsubmit="alert('Login Successfully');">
+
+            <!-- <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter username"> -->
+
+            <label for="Email">Email</label>
+            <input type="email" id="Email" placeholder="Enter E-mail address" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password" required>
+
+            <div class="remember">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+            </div>
+
+            <button type="submit">LET'S GO</button>
+
+            <p>Don't have an account ? <a href="REGISTER.HTML">Register</a></p>
+        </form>
+    </div>
+
+</body>
+
+</html>

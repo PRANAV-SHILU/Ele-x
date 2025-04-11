@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | ELE-X</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Header */
+        .fix {
+            background: black;
+            padding: 22px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .fix h1 {
+            padding-bottom: 23px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 18px;
+            position: relative;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        }
+
+        .contact-container {
+            width: 80%;
+            max-width: 900px;
+            background: linear-gradient(to bottom, #222, #000);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 10px 30px 55px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 230px;
+        }
+
+        .contact-title {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: orange;
+        }
+
+        .contact-form {
+            flex: 1;
+            min-width: 250px;
+            padding-right: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            background: #333;
+            color: white;
+            border: 1px solid orange;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        .contact-form textarea {
+            height: 80px;
+            resize: none;
+        }
+
+        .contact-form button {
+            width: 100%;
+            background: orange;
+            padding: 10px;
+            margin-top: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            border: none;
+            transition: background 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #e6b800;
+        }
+
+        .contact-details {
+            flex: 1;
+            min-width: 250px;
+            padding-left: 20px;
+        }
+
+        .contact-details div {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .contact-details div i {
+            color: orange;
+            margin-right: 8px;
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 5px;
+            font-size: 20px;
+            color: orange;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-form,
+            .contact-details {
+                padding: 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .contact-form button {
+                width: auto;
+                padding: 8px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header class="fix">
+        <h1>Ele-x</h1>
+        <nav>
+            <ul>
+                <li><a href="HOME.HTML">Home</a></li>
+                <li><a href="#">Shop Now</a></li>
+                <li><a href="MEGADEALS.HTML">Mega Deals</a></li>
+                <li><a href="VOUCHER.HTML">Vouchers</a></li>
+                <li><a href="BLOGFAQ.HTML">Blogs & FAQs</a></li>
+                <li><a href="ABOUTUS.HTML">About Us</a></li>
+                <li><a href="CONTACT.HTML">Contact</a></li>
+                <li><a href="LOGIN.HTML">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contact-container">
+        <div class="contact-title">📌 CONTACT US</div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <form method="post" onsubmit="alert('Message Submitted');">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" autocomplete="on">
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="Enter subject">
+
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Type your message..."></textarea>
+
+                <button type="submit">SEND MESSAGE</button>
+            </form>
+        </div>
+
+
+        <!-- Contact Details -->
+        <div class="contact-details">
+            <br>
+            <div><i>📍</i> Rajgor Street, Bhavnagar, Gujarat, India, Pincode - 364 004</div>
+            <div><i>📞</i> +91 90338 2XXXX</div>
+            <div><i>📧</i> pranavshiluXXXX@gmail.com</div>
+            <div><i>⏳</i> Working Hours: 9 AM - 6 PM</div>
+            <div><i>🌍</i> Website: www.elex.com</div>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="#">📘 Facebook</a>
+            <a href="#">📷 Instagram</a>
+            <a href="#">🐦 Twitter</a>
+            <a href="#">🔗 LinkedIn</a>
+            <a href="#">💬 WhatsApp</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
