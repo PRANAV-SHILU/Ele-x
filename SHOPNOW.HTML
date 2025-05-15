@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ele-x | Shop Now</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0d0d0d;
+            color: white;
+        }
+
+        nav {
+            background-color: #0d0d0d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            border-bottom: 1px solid #333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        }
+
+        .menu {
+            margin-right: 53px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 30px 0 10px;
+            font-size: 36px;
+        }
+
+        .filters {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .filters button {
+            background-color: #ff8000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0 50px 50px;
+        }
+
+        .product {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .product img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .product h3 {
+            margin: 10px 0 5px;
+            font-size: 18px;
+        }
+
+        .product p {
+            margin: 5px 0 15px;
+            font-size: 16px;
+        }
+
+        .product button {
+            background-color: #ff8000;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .content {
+            margin-top: 100px;
+        }
+
+        .content h1 {
+            color: #ff6600;
+            margin-bottom: 35px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Ele-x</div>
+        <div class="menu">
+            <a href="HOME.HTML">Home</a>
+            <a href="SHOPNOW.HTML">Shop Now</a>
+            <a href="MEGADEALS.HTML">Mega Deals</a>
+            <a href="VOUCHER.HTML">Vouchers</a>
+            <a href="BLOGFAQ.HTML">Blogs & FAQs</a>
+            <a href="ABOUTUS.HTML">About Us</a>
+            <a href="LOGIN.HTML">Login</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>Shop Now</h1>
+        <div class="filters">
+            <button onclick="showAll()">All</button>
+            <button onclick="filterCategory('electronics')">Electronics</button>
+            <button onclick="filterCategory('smartphone')">Smartphone</button>
+            <button onclick="filterCategory('laptops')">Laptops</button>
+            <button onclick="filterCategory('home-appliances')">Home Appliances</button>
+            <button onclick="filterCategory('other')">Other</button>
+        </div>
+
+        <div class="products" id="all-products">
+            <!-- Electronics -->
+            <div class="product electronics">
+                <img src="images/" alt="Smart LED TV">
+                <h3>Smart LED TV</h3>
+                <p>₹ 34,999</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+
+            <div class="product electronics">
+                <img src="images/" alt="Bluetooth Speaker">
+                <h3>Bluetooth Speaker</h3>
+                <p>₹ 2,499</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+
+            <div class="product electronics">
+                <img src="images/" alt="Wireless Bluetooth Device">
+                <h3>Wireless Bluetooth Device</h3>
+                <p>₹ 1,199</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+
+            <div class="product electronics">
+                <img src="images/" alt="Air Conditioner">
+                <h3>Air Conditioner</h3>
+                <p>₹ 29,999</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+
+            <div class="product electronics">
+                <img src="images/" alt="Washing Machine">
+                <h3>Washing Machine</h3>
+                <p>₹ 18,999</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+
+            <div class="product electronics">
+                <img src="images/" alt="Refrigerator">
+                <h3>Refrigerator</h3>
+                <p>₹ 22,499</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+
+            <div class="product electronics">
+                <img src="images/" alt="Projector">
+                <h3>Projector</h3>
+                <p>₹ 15,999</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+
+            <div class="product electronics">
+                <img src="images/" alt="Digital Camera">
+                <h3>Digital Camera</h3>
+                <p>₹ 27,499</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+
+
+            <!-- Smartphone -->
+
+            <div class="product smartphone">
+                <img src="images/" alt="Samsung Galaxy S20">
+                <h3>Samsung Galaxy S20</h3>
+                <p>₹ 29,999</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product smartphone">
+                <img src="images/" alt="iPhone 13">
+                <h3>iPhone 13</h3>
+                <p>₹ 58,999</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product smartphone">
+                <img src="images/" alt="Apple iPad 10th Gen">
+                <h3>Apple iPad 10th Gen</h3>
+                <p>₹ 39,900</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product smartphone">
+                <img src="images/" alt="Samsung Galaxy Tab S6 Lite">
+                <h3>Samsung Galaxy Tab S6 Lite</h3>
+                <p>₹ 23,999</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product smartphone">
+                <img src="images/" alt="Smartwatch Pro 8">
+                <h3>Smartwatch Pro 8</h3>
+                <p>₹ 3,499</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product smartphone">
+                <img src="images/" alt="Amazfit Bip 3">
+                <h3>Amazfit Bip 3</h3>
+                <p>₹ 2,799</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product smartphone">
+                <img src="images/" alt="OnePlus Buds Z2">
+                <h3>OnePlus Buds Z2</h3>
+                <p>₹ 4,999</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product smartphone">
+                <img src="images/" alt="Realme Buds Air 5">
+                <h3>Realme Buds Air 5</h3>
+                <p>₹ 3,699</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product smartphone">
+                <img src="images/" alt="boAt Bassheads 100">
+                <h3>boAt Bassheads 100</h3>
+                <p>₹ 399</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product smartphone">
+                <img src="images/" alt="JBL C100SI">
+                <h3>JBL C100SI</h3>
+                <p>₹ 749</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+
+
+            <!-- Laptops -->
+            <div class="product laptops">
+                <img src="images/gaming-laptop.jpg" alt="Gaming Laptop">
+                <h3>Gaming Laptop RTX 8060</h3>
+                <p>₹ 84,990</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product laptops">
+                <img src="images/asus-rog-strix-g15.jpg" alt="ASUS ROG Strix G15">
+                <h3>ASUS ROG Strix G15</h3>
+                <p>₹ 92,999</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product laptops">
+                <img src="images/hp-pavilion-14.jpg" alt="HP Pavilion 14">
+                <h3>HP Pavilion 14 - Coding Edition</h3>
+                <p>₹ 58,499</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product laptops">
+                <img src="images/lenovo-thinkpad-x1.jpg" alt="Lenovo ThinkPad X1">
+                <h3>Lenovo ThinkPad X1 Carbon</h3>
+                <p>₹ 1,12,999</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product laptops">
+                <img src="images/acer-aspire-3.jpg" alt="Acer Aspire 3">
+                <h3>Budget Laptop - Acer Aspire 3</h3>
+                <p>₹ 34,990</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product laptops">
+                <img src="images/dell-inspiron-15.jpg" alt="Dell Inspiron 15">
+                <h3>Laptop Computer - Dell Inspiron 15</h3>
+                <p>₹ 47,499</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product laptops">
+                <img src="images/hp-aio-desktop.jpg" alt="HP All-in-One Desktop">
+                <h3>Desktop Computer - HP AIO</h3>
+                <p>₹ 52,000</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product laptops">
+                <img src="images/samsung-24-inch-monitor.jpg" alt="Samsung 24-inch Monitor">
+                <h3>Computer Monitor - Samsung 24"</h3>
+                <p>₹ 9,499</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product laptops">
+                <img src="images/lenovo-ideacentre-aio.jpg" alt="Lenovo IdeaCentre AIO">
+                <h3>Computer - Lenovo IdeaCentre AIO</h3>
+                <p>₹ 61,000</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+
+
+            <!-- Home Appliances -->
+            <div class="product home-appliances">
+                <img src="images/electric-geyser.jpg" alt="Electric Geyser">
+                <h3>Electric Geyser</h3>
+                <p>₹ 7,499</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product home-appliances">
+                <img src="images/mixer-grinder.jpg" alt="Mixer Grinder">
+                <h3>Mixer Grinder</h3>
+                <p>₹ 2,799</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product home-appliances">
+                <img src="images/electric-grinder.jpg" alt="Electric Grinder">
+                <h3>Electric Grinder</h3>
+                <p>₹ 3,199</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product home-appliances">
+                <img src="images/food-processor.jpg" alt="Food Processor">
+                <h3>Food Processor</h3>
+                <p>₹ 5,499</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product home-appliances">
+                <img src="images/gas-electric-stove-combo.jpg" alt="Gas & Electric Stove Combo">
+                <h3>Gas & Electric Stove Combo</h3>
+                <p>₹ 6,999</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product home-appliances">
+                <img src="images/electric-kettle.jpg" alt="Electric Kettle">
+                <h3>Electric Kettle</h3>
+                <p>₹ 1,299</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product home-appliances">
+                <img src="images/pop-up-toaster.jpg" alt="Pop-up Toaster">
+                <h3>Pop-up Toaster</h3>
+                <p>₹ 999</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product home-appliances">
+                <img src="images/vacuum-cleaner.jpg" alt="Vacuum Cleaner">
+                <h3>Vacuum Cleaner</h3>
+                <p>₹ 4,899</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product home-appliances">
+                <img src="images/coffee-maker.jpg" alt="Coffee Maker">
+                <h3>Coffee Maker</h3>
+                <p>₹ 3,499</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product home-appliances">
+                <img src="images/microwave-oven.jpg" alt="Microwave Oven">
+                <h3>Microwave Oven</h3>
+                <p>₹ 6,999</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product home-appliances">
+                <img src="images/convection-oven.jpg" alt="Convection Oven">
+                <h3>Convection Oven</h3>
+                <p>₹ 8,299</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+
+            <!-- Other -->
+            <div class="product other">
+                <img src="images/usb-charging-cable.jpg" alt="USB Charging Cable">
+                <h3>USB Charging Cable</h3>
+                <p>₹ 199</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product other">
+                <img src="images/fast-charger.jpg" alt="Fast Charger">
+                <h3>Fast Charger</h3>
+                <p>₹ 499</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product other">
+                <img src="images/wall-charger.jpg" alt="Wall Charger">
+                <h3>Wall Charger</h3>
+                <p>₹ 549</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product other">
+                <img src="images/power-bank-10000mah.jpg" alt="Power Bank 10000mAh">
+                <h3>Power Bank 10000mAh</h3>
+                <p>₹ 1,199</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product other">
+                <img src="images/hdmi-vga-audio-cable-combo.jpg" alt="HDMI/VGA/Audio Cable">
+                <h3>HDMI/VGA/Audio Cable</h3>
+                <p>₹ 299</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product other">
+                <img src="images/usb-hub-4-port.jpg" alt="USB Hub 4-Port">
+                <h3>USB Hub 4-Port</h3>
+                <p>₹ 399</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product other">
+                <img src="images/screen-cleaner-kit.jpg" alt="Screen Cleaner Kit">
+                <h3>Screen Cleaner Kit</h3>
+                <p>₹ 149</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product other">
+                <img src="images/bluetooth-tracker.jpg" alt="Bluetooth Tracker">
+                <h3>Bluetooth Tracker</h3>
+                <p>₹ 899</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product other">
+                <img src="images/mini-portable-speaker.jpg" alt="Mini Portable Speaker">
+                <h3>Mini Portable Speaker</h3>
+                <p>₹ 699</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product other">
+                <img src="images/silicone-phone-case.jpg" alt="Silicone Phone Case">
+                <h3>Silicone Phone Case</h3>
+                <p>₹ 299</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product other">
+                <img src="images/tempered-glass-screen-protector.jpg" alt="Tempered Glass Screen Protector">
+                <h3>Screen Protector</h3>
+                <p>₹ 199</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product other">
+                <img src="images/laptop-bag.jpg" alt="Laptop Bag">
+                <h3>Laptop Bag</h3>
+                <p>₹ 899</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product other">
+                <img src="images/wireless-keyboard.jpg" alt="Wireless Keyboard">
+                <h3>Wireless Keyboard</h3>
+                <p>₹ 1,299</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product other">
+                <img src="images/wireless-mouse.jpg" alt="Wireless Mouse">
+                <h3>Wireless Mouse</h3>
+                <p>₹ 699</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product other">
+                <img src="images/external-hard-drive-1tb.jpg" alt="External Hard Drive 1TB">
+                <h3>External Hard Drive 1TB</h3>
+                <p>₹ 4,499</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product other">
+                <img src="images/64gb-pen-drive.jpg" alt="64GB Pen Drive">
+                <h3>64GB Pen Drive</h3>
+                <p>₹ 599</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+            <div class="product other">
+                <img src="images/workstation-pc-setup.jpg" alt="Workstation PC Setup">
+                <h3>Workstation PC Setup</h3>
+                <p>₹ 1,09,999</p>
+                <button>Buy Now</button>
+                <button>View Details</button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script>
+        function showAll() {
+            var items = document.querySelectorAll('.product');
+            items.forEach(function (item) {
+                item.classList.remove('hidden');
+            });
+        }
+
+        function filterCategory(category) {
+            var items = document.querySelectorAll('.product');
+            items.forEach(function (item) {
+                if (item.classList.contains(category)) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
