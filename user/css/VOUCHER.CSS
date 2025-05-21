@@ -1,0 +1,131 @@
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+  }
+
+  /*fixed*/
+  nav {
+      background-color: #0d0d0d;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      padding-left: 30px;
+      border-bottom: 1px solid #333;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+  }
+
+  nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+  }
+
+  nav .menu a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+  }
+
+  nav a:hover {
+      color: #ff6600;
+  }
+
+  .menu {
+      margin-right: 68px;
+  }
+
+  /*end*/
+
+
+  .coupon-container {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0px 0px 10px rgba(255, 165, 0, 0.3);
+      margin-top: 100px;
+  }
+
+  h2 {
+      color: #ff9800;
+  }
+
+  .input-container {
+      display: flex;
+      justify-content: space-between;
+      background: #333;
+      padding: 10px;
+      border-radius: 5px;
+  }
+
+  input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: 16px;
+      padding: 5px;
+  }
+
+  .apply-btn {
+      background: #ff9800;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+  }
+
+  .apply-btn:hover {
+      background: #ffa726;
+  }
+
+  .coupon-list {
+      margin-top: 15px;
+      text-align: left;
+  }
+
+  .coupon-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #222;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 5px 0;
+  }
+
+  .coupon-code {
+      font-weight: bold;
+      color: #ffcc00;
+  }
+
+  .copy-btn {
+      background: black;
+      border: 1px solid #ffd700;
+      padding: 5px 10px;
+      color: goldenrod;
+      cursor: pointer;
+      border-radius: 5px;
+  }
+
+  .copy-btn:hover {
+      background: #5f5f5f;
+  }
+
+  .message {
+      margin-top: 10px;
+      font-weight: bold;
+  }
