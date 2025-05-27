@@ -148,3 +148,8 @@
      transition: transform 0.5s;
      transform: translateY(-20px);
  }
+img:hover {
+     box-shadow: 0 0 15px yellow;
+     transition: ease-in-out 0.2s;
+     transform: translateY(-10px);
+ }
